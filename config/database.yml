@@ -6,5 +6,6 @@ default: &default
 development:
   <<: *default
   database: rails_docker_development
-  host: localhost
+  host: db
+  username: postgres
   port: 5432

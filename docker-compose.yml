@@ -1,0 +1,24 @@
+version: '3'
+services:
+ db:
+  image: postgres:alpine
+  restart: always
+  volumes:
+   - ./tmp/db:/var/lib/postgresql/data
+  ports:
+    - "5432:5432"
+
+ app:
+  build: .
+  restart: always
+  command: bash -c "rm -f tmp/pids/server.pid && rails s -p 3000 -b '0.0.0.0'"
+  volumes:
+   - .:/rails_docker
+   - bundle_path:/bundle
+  ports:
+   - "3000:3000"
+  depends_on:
+   - db
+
+volumes:
+  bundle_path:
