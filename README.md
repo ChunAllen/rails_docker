@@ -1,24 +1,14 @@
-# README
+# Dockerized Ruby on Rails app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a sample project for dockerizing Ruby on Rails app
 
-Things you may want to cover:
+Checkout my detailed explanation from my blog: https://allenchun.com/blog/2020/3/24/dockerize-ruby-on-rails-app-with-sidekiq
 
-* Ruby version
+## Run this app
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+git clone https://github.com/ChunAllen/rails_docker.git
+cd rails_docker
+docker-compose build 
+docker-compose up
+```
