@@ -2,7 +2,7 @@
 
 This is a sample project for dockerizing Ruby on Rails app
 
-Checkout my detailed explanation from my blog: https://allenchun.com/blog/2020/3/24/dockerize-ruby-on-rails-app-with-sidekiq
+Checkout my detailed explanation from my blog: https://medium.com/codex/dockerize-ruby-on-rails-application-3f4c5b345862
 
 ## Run this app
 
